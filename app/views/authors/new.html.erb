@@ -1,0 +1,15 @@
+<h2>New Author</h2>
+
+<%= form_for @author, html: { class: "pure-form pure-form-aligned"} do |f| %>
+	<fieldset>
+	        <div class="pure-control-group">
+				<%= f.label :name %>
+				<%= f.text_field :name %>
+			</div>
+			<div class="pure-control-group">	
+				<%= f.label :image_url %>
+				<%= f.text_field :image_url %>
+			</div>	
+				<%= f.submit class: "pure-button pure-button-primary" %>
+    </fieldset>
+<% end %>    

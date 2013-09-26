@@ -1,0 +1,11 @@
+
+<h2>Show Author</h2>
+
+<h1>Meet <%= @author.name %></h1>
+<img src="<%= @author.image_url %>" />
+
+<ul>
+<% @author.books.each do |book| %>
+	<li><%= book.title %></li>
+<% end %>	
+</ul>
