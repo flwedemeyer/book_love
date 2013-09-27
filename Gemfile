@@ -15,6 +15,8 @@ gem 'devise'
 
 gem 'nokogiri'
 
+gem "font-awesome-rails", "~> 3.2.1.3"
+
 
 # Gems used only for assets and not required
 # in production environments by default.

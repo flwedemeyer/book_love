@@ -1,11 +1,14 @@
+<div class="center_big">
+	<h2>Show Author</h2>
 
-<h2>Show Author</h2>
+	<h1>Meet <%= @author.name %></h1>
+	<div class="circle">
+	<img class="image-wrap" src="<%= @author.image_url %>" />
+	</div>
 
-<h1>Meet <%= @author.name %></h1>
-<img src="<%= @author.image_url %>" />
-
-<ul>
-<% @author.books.each do |book| %>
-	<li><%= book.title %></li>
-<% end %>	
-</ul>
+	<ul>
+	<% @author.books.each do |book| %>
+		<li class="nav-item"><%= book.title %></li>
+	<% end %>	
+	</ul>
+</div>

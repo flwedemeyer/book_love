@@ -1,10 +1,15 @@
-<h2>Author Index</h2>
+<img alt="full screen background image" src="<%= asset_path 'book_piles.jpeg' %>" id="full-screen-background-image" class="desaturate" /> 
+<div class="center_me">
+	<h2>Getting listy...</h2>
 
-<ul class='authors'>
-	<% @authors.each do |author| %>
-		<li><%= author.name %></li>	
-		<%= link_to 'Show', author %>
-		<%= link_to 'Edit', edit_author_path(author) %>
-		<%= link_to 'Delete', author_path(author), method: :delete %>
-	<% end %>
-</ul>
+	<ul class='authors'>
+		<% @authors.each do |author| %>
+			<li class="nav-item"><%= author.name %></li>	
+			<i class="icon-eye-open"><%= link_to 'Show', author %></i>
+			<i class="icon-trash"><%= link_to 'Delete', author_path(author),  method: :delete %></i>
+		</br>
+		<br>
+
+		<% end %>
+	</ul>
+</div>

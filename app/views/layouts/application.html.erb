@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>BookLove</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
-<div class="pure-g-r" id="layout">
-
-	<!-- THIS IS THE NAV -->
-<div class="sidebar pure-u">
-  <div class="pure-menu pure-menu-open">
-      <a class="pure-menu-heading">Book Love</a>
-
-      <ul class="nav">
+  
+  <div id="wrapper">
+  	
+    <div id="menu" class="pure-menu pure-menu-open">
+         <ul class="nav">
+          <li id="heart" class="nav-item"><i class="icon-heart"></i></li>
           <li class="nav-item"><%= link_to 'Home', root_path%></li>
           <li class="nav-item"><%= link_to 'Add Author', new_author_path %></li>
           <li class="nav-item"><%= link_to 'Past Affairs', authors_path %></li>
-      </ul>
-  </div>
-</div>	
+    		</ul>
+    </div>	
+    
 
-	<p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+   <div class="main">
 
-	<div class="content">
+     <%= yield %>
 
-		<%= yield %>
-
-	</div>
+   </div>
 
 </div>
 </body>
-</html>
+<html>

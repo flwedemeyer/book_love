@@ -1,0 +1,96 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#full-screen-background-image {
+  z-index: -999;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#wrapper {
+  position: relative;
+  width: 800px;
+  min-height: 400px;
+  margin: 100px auto;
+  color: #333;
+}
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    background: #fff;
+    font-weight: 400;
+    font-size: 100%;
+    color: #333;
+    height: 100%;
+}
+
+a {
+    color: #555;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    color: #000;
+}
+
+.center_me {
+    margin-left: 40%;
+    margin-right: 20%;
+    background-color: white;
+    padding: 15px 35px;
+}
+
+img.desaturate { 
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.circle .image-wrap {
+    height: 300px;
+    width: 300px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.center_big {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 15px 35px;
+    content: center;
+}
+
+.nav-item {
+    list-style-type: none;
+    font-size: 1em;
+}
+
+#heart {
+    font-size: 5em;
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+
+
+
+
+
